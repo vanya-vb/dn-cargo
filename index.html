@@ -9,10 +9,10 @@
 </head>
 
 <body
-  class="bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]  bg-no-repeat bg-cover bg-left backdrop-blur-md">
+  class="relative bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('/src/assets/background-blurred.jpg')] bg-no-repeat bg-cover bg-center">
 
   <!-- Header -->
-  <header id="hero-section" class="fixed inset-x-0 top-0 z-50 bg-black/65">
+  <header class="fixed inset-x-0 top-0 z-50 bg-black/65">
     <!-- Navigation -->
     <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
@@ -81,7 +81,7 @@
 
   <!-- Hero section -->
   <section id="hero-section"
-    class="relative w-full min-h-screen flex items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] px-6 lg:px-8 bg-cover bg-center bg-no-repeat">
+    class="w-full min-h-screen flex items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] px-6 lg:px-8 bg-cover bg-center bg-no-repeat">
     <div class="mx-auto max-w-2xl w-full">
       <div class="text-left">
         <!-- Heading -->
@@ -97,7 +97,7 @@
         <!-- CTA -->
         <div class="mt-10 flex items-center justify-start gap-x-6">
           <a href="#contact-section"
-            class="rounded-md bg-gold px-5 py-3 text-sm sm:text-base font-semibold text-black shadow-md hover:bg-transparent transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+            class="rounded-md bg-gold px-5 py-3 text-sm sm:text-base font-semibold text-black shadow-md hover:bg-darkgold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
             Contact us
           </a>
         </div>
@@ -106,7 +106,7 @@
   </section>
 
   <!-- Feature section -->
-  <section id="feature-section" class="w-full py-20 px-6 lg:px-16">
+  <section id="services-section" class="w-full py-20 px-6 lg:px-16">
     <div class="max-w-7xl mx-auto text-center">
       <!-- Section Header -->
       <h2 class="text-3xl sm:text-4xl font-bold text-white">
@@ -121,34 +121,35 @@
     <div class="mt-12 flex flex-wrap justify-center gap-15">
       <!-- Feature 1 -->
       <div class="bg-white p-6 rounded-xl shadow-md w-75">
-        <div class="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4 mx-auto">
-          <img src="/src/assets/bulgarian-flag.png" alt="bulgarian flag" class="w-8 h-8">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto">
+          <img src="/src/assets/bulgarian-flag.png" alt="bulgarian flag" class="w-11 h-11">
         </div>
         <h3 class="text-xl font-semibold text-blue mb-2 text-center">Internal Transport</h3>
         <p class="text-gray-600 text-center text-sm">
-          Your shipments reach their destination on time, every time.
+          We deliver to any point in Bulgaria — fast, efficiently, and safely.
         </p>
       </div>
 
       <!-- Feature 2 -->
       <div class="bg-white p-6 rounded-xl shadow-md w-75">
-        <div class="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4 mx-auto">
-          <img src="/src/assets/greek-flag.png" alt="greek flag" class="w-8 h-8">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto">
+          <img src="/src/assets/greek-flag.png" alt="greek flag" class="w-11 h-11">
         </div>
         <h3 class="text-xl font-semibold text-blue mb-2 text-center">Transport to/from Greece</h3>
         <p class="text-gray-600 text-center text-sm">
-          Every package is handled with care and protected throughout the journey.
+          We organize regular routes between Bulgaria and Greece — ideal for business partnerships,
+          commercial exchanges, and logistical needs.
         </p>
       </div>
 
       <!-- Feature 3 -->
       <div class="bg-white p-6 rounded-xl shadow-md w-75">
-        <div class="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4 mx-auto">
-          <img src="/src/assets/delivery-icon.png" alt="delivery icon" class="w-8 h-8">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto">
+          <img src="/src/assets/delivery-icon.png" alt="delivery icon" class="w-11 h-11">
         </div>
         <h3 class="text-xl font-semibold text-blue mb-2 text-center">Tracking and Communication</h3>
         <p class="text-gray-600 text-center text-sm">
-          Monitor your shipment status anytime.
+          You'll always know where your cargo is — we ensure direct and timely communication.
         </p>
       </div>
     </div>
@@ -173,7 +174,7 @@
           delivery tailored to your business needs.
         </p>
         <a href="#contact-section"
-          class="mt-6 inline-block rounded-md bg-gold px-5 py-3 text-gray-900 font-semibold hover:bg-indigo-400 transition">
+          class="mt-6 inline-block rounded-md bg-gold px-5 py-3 text-gray-900 font-semibold hover:bg-darkgold transition">
           Contact Us
         </a>
       </div>
@@ -192,7 +193,7 @@
   <!-- Contact section -->
 
   <!-- Footer -->
-  <footer class="w-full bg-black/50 text-platinum py-10 px-6">
+  <footer class="w-full bg-black/60 text-platinum py-10 px-6">
     <div class="max-w-7xl mx-auto text-center">
       <!-- Copyright -->
       <p class="text-gray-500 text-sm">&copy; 2025 DN Cargo. All rights reserved.</p>
