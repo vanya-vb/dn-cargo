@@ -11,7 +11,7 @@
 <body>
 
   <!-- Header -->
-  <header class="absolute inset-x-0 top-0 z-50 bg-black/50">
+  <header id="hero-section" class="absolute inset-x-0 top-0 z-50 bg-black/50">
     <!-- Navigation -->
     <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
@@ -103,6 +103,56 @@
       </div>
     </div>
   </section>
+
+  <!-- Feature section -->
+  <section id="feature-section" class="w-full bg-gray-900 py-20 px-6 lg:px-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <!-- Section Header -->
+      <h2 class="text-3xl sm:text-4xl font-bold text-white">
+        Services
+      </h2>
+      <p class="mt-4 text-white text-base sm:text-lg">
+        Reliable, safe, and precise delivery services designed to meet your business needs.
+      </p>
+    </div>
+
+    <!-- Feature Cards using Flexbox -->
+    <div class="mt-12 flex flex-wrap justify-center gap-8">
+      <!-- Feature 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-md w-64">
+        <div class="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4 mx-auto">
+          <img src="/src/assets/bulgarian-flag.png" alt="bulgarian flag" class="w-8 h-8">
+        </div>
+        <h3 class="text-xl font-semibold text-blue mb-2 text-center">Internal Transport</h3>
+        <p class="text-gray-600 text-center text-sm">
+          Your shipments reach their destination on time, every time.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-md w-64">
+        <div class="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4 mx-auto">
+          <img src="/src/assets/greek-flag.png" alt="greek flag" class="w-8 h-8">
+        </div>
+        <h3 class="text-xl font-semibold text-blue mb-2 text-center">Transport to/from Greece</h3>
+        <p class="text-gray-600 text-center text-sm">
+          Every package is handled with care and protected throughout the journey.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-md w-64">
+        <div class="w-16 h-16 bg-blue rounded-full flex items-center justify-center mb-4 mx-auto">
+          <img src="/src/assets/delivery-icon.png" alt="delivery icon" class="w-8 h-8">
+        </div>
+        <h3 class="text-xl font-semibold text-blue mb-2 text-center">Tracking and Communication</h3>
+        <p class="text-gray-600 text-center text-sm">
+          Monitor your shipment status anytime.
+        </p>
+      </div>
+    </div>
+  </section>
+
 
 </body>
 
