@@ -1,458 +1,312 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DN Cargo</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" crossorigin href="/dn-cargo/assets/index-BZXgl_pM.css">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" crossorigin href="/dn-cargo/assets/index-DoLcfifh.css">
+</head>
 
-  <body
-    class="relative bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('/src/assets/background-blurred.jpg')] bg-cover bg-top bg-no-repeat"
-  >
+<body
+    class="relative bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('/src/assets/background-blurred.jpg')] bg-cover bg-top bg-no-repeat">
     <!-- Header -->
     <header class="fixed inset-x-0 top-0 z-50 bg-black/65">
-      <!-- Navigation -->
-      <nav
-        aria-label="Global"
-        class="flex items-center justify-between p-6 lg:px-16"
-      >
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">DN Cargo</span>
-            <img src="/dn-cargo/assets/logo-BA4YAVu8.png" alt="logo" class="h-8 w-auto" />
-          </a>
-        </div>
-        <div class="flex lg:hidden">
-          <button
-            type="button"
-            command="show-modal"
-            commandfor="mobile-menu"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              data-slot="icon"
-              aria-hidden="true"
-              class="size-6"
-            >
-              <path
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a
-            href="#"
-            class="hover:text-gold text-sm/6 font-semibold text-white transition"
-            >Home</a
-          >
-          <a
-            href="#services-section"
-            class="hover:text-gold text-sm/6 font-semibold text-white transition"
-            >Services</a
-          >
-          <a
-            href="#about-section"
-            class="hover:text-gold text-sm/6 font-semibold text-white transition"
-            >About</a
-          >
-          <a
-            href="#contact-section"
-            class="hover:text-gold text-sm/6 font-semibold text-white transition"
-            >Contacts</a
-          >
-        </div>
-      </nav>
-
-      <!-- Mobile navigation -->
-      <div>
-        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-          <div tabindex="0" class="fixed inset-0 focus:outline-none">
-            <el-dialog-panel
-              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black/90 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10"
-            >
-              <div class="flex items-center justify-between">
+        <!-- Navigation -->
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-16">
+            <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
-                  <span class="sr-only">DN Cargo</span>
-                  <img
-                    src="/dn-cargo/assets/logo-BA4YAVu8.png"
-                    alt="logo"
-                    class="h-8 w-auto"
-                  />
+                    <span class="sr-only">DN Cargo</span>
+                    <img src="/dn-cargo/assets/logo-BA4YAVu8.png" alt="logo" class="h-8 w-9" />
                 </a>
-                <button
-                  type="button"
-                  command="close"
-                  commandfor="mobile-menu"
-                  class="-m-2.5 rounded-md p-2.5 text-gray-200"
-                >
-                  <span class="sr-only">Close menu</span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    data-slot="icon"
-                    aria-hidden="true"
-                    class="size-6"
-                  >
-                    <path
-                      d="M6 18 18 6M6 6l12 12"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
                 </button>
-              </div>
-              <div class="mt-6 flow-root">
-                <div class="-my-6 divide-y divide-white/10">
-                  <div class="space-y-2 py-6">
-                    <a
-                      href="#"
-                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                      >Home</a
-                    >
-                    <a
-                      href="#services-section"
-                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                      >Services</a
-                    >
-                    <a
-                      href="#about-section"
-                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                      >About</a
-                    >
-                    <a
-                      href="#contact-section"
-                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
-                      >Contacts</a
-                    >
-                  </div>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#" class="hover:text-gold text-sm/6 font-semibold text-white transition">Home</a>
+                <a href="#services-section"
+                    class="hover:text-gold text-sm/6 font-semibold text-white transition">Services</a>
+                <a href="#about-section" class="hover:text-gold text-sm/6 font-semibold text-white transition">About</a>
+                <a href="#contact-section"
+                    class="hover:text-gold text-sm/6 font-semibold text-white transition">Contacts</a>
+            </div>
+            <!-- Languages -->
+            <div class="hidden lg:flex lg:gap-2 lg:ml-10">
+                <a href="index.html"><img src="/dn-cargo/assets/british-flag-BrcLlUZW.png" alt="british flag" class="w-5"></a>
+                <a href="bg.html"><img src="data:image/png;base64,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" alt="bulgarian flag" class="w-5"></a>
+            </div>
+        </nav>
+
+        <!-- Mobile navigation -->
+        <div>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black/90 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">DN Cargo</span>
+                                <img src="/dn-cargo/assets/logo-BA4YAVu8.png" alt="logo" class="h-8 w-9" />
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <span class="sr-only">Close menu</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-white/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Home</a>
+                                    <a href="#services-section"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Services</a>
+                                    <a href="#about-section"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About</a>
+                                    <a href="#contact-section"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contacts</a>
+                                    <hr class="text-gray-500">
+                                    <a href="index.html"><img src="/dn-cargo/assets/british-flag-BrcLlUZW.png" alt="british flag"
+                                            class="w-6 inline mr-2"></a>
+                                    <a href="bg.html"><img src="data:image/png;base64,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" alt="bulgarian flag"
+                                            class="w-6 inline"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
                 </div>
-              </div>
-            </el-dialog-panel>
-          </div>
-        </dialog>
-      </div>
+            </dialog>
+        </div>
     </header>
 
     <!-- Hero section -->
     <section
-      class="flex min-h-screen w-full items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat px-6 lg:px-8"
-    >
-      <div class="mx-auto w-full max-w-2xl">
-        <div class="text-left">
-          <!-- Heading -->
-          <h1
-            class="animate-fade-in-down text-4xl font-semibold tracking-tight text-white opacity-0 sm:text-5xl md:text-6xl"
-          >
-            Welcome to DN Cargo
-          </h1>
+        class="flex min-h-screen w-full items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat px-6 lg:px-8">
+        <div class="mx-auto lg:mx-40 w-full max-w-3xl">
+            <div class="text-left">
+                <!-- Heading -->
+                <h1
+                    class="animate-fade-in-down text-4xl font-semibold tracking-tight text-white opacity-0 md:text-6xl sm:text-5xl">
+                    Welcome to DN Cargo
+                </h1>
 
-          <!-- Subheading -->
-          <p
-            class="text-platinum animate-fade-in-up mt-6 text-base font-medium opacity-0 [animation-delay:400ms] sm:text-lg md:text-xl"
-          >
-            More than delivery – a promise of protection and precision.
-          </p>
+                <!-- Subheading -->
+                <p
+                    class="text-platinum animate-fade-in-up mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium opacity-0 [animation-delay:400ms]">
+                    More than delivery – a promise of protection and precision.
+                </p>
 
-          <!-- CTA -->
-          <div
-            class="animate-fade-in-up mt-10 flex items-center justify-start gap-x-6 opacity-0 [animation-delay:800ms]"
-          >
-            <a
-              href="#contact-section"
-              class="bg-gold hover:bg-darkgold focus-visible:outline-gold rounded-md px-5 py-3 text-sm font-semibold text-black shadow-md transition focus-visible:outline-2 focus-visible:outline-offset-2 sm:text-base"
-            >
-              Contact us
-            </a>
-          </div>
+                <!-- CTA -->
+                <div
+                    class="animate-fade-in-up mt-10 flex items-center justify-start gap-x-6 opacity-0 [animation-delay:800ms]">
+                    <a href="#contact-section"
+                        class="bg-gold hover:bg-darkgold focus-visible:outline-gold rounded-md px-5 py-3 text-sm font-semibold text-black shadow-md transition focus-visible:outline-2 focus-visible:outline-offset-2 sm:text-base">
+                        Contact us
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Feature section -->
     <section id="services-section" class="w-full px-6 pt-22 lg:px-16 lg:pt-46">
-      <div class="mx-auto max-w-7xl text-center">
-        <!-- Section Header -->
-        <h2 class="text-3xl font-bold text-white sm:text-4xl">Services</h2>
-        <p class="text-platinum mt-4 text-base sm:text-lg">
-          Reliable, safe, and precise delivery services designed to meet your
-          business needs.
-        </p>
-      </div>
-
-      <!-- Feature Cards -->
-      <div class="mt-20 flex flex-wrap justify-center gap-15">
-        <!-- Feature 1 -->
-        <div class="shadow-gold/15 w-80 rounded-xl p-6 shadow-md">
-          <div class="mx-auto flex h-16 w-16 items-center justify-center">
-            <img
-              src="data:image/png;base64,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"
-              alt="bulgarian flag"
-              class="w-12"
-            />
-          </div>
-          <h3 class="text-darkgold mb-2 text-center text-xl font-semibold">
-            Internal Transport
-          </h3>
-          <p class="text-platinum text-center text-sm">
-            We deliver to any point in Bulgaria — fast, efficiently, and safely.
-          </p>
+        <div class="mx-auto max-w-7xl text-center">
+            <!-- Section Header -->
+            <h2 class="text-3xl font-bold text-white sm:text-4xl">Services</h2>
+            <p class="text-platinum mt-4 text-base sm:text-lg">
+                Reliable, safe, and precise delivery services designed to meet your
+                business needs.
+            </p>
         </div>
 
-        <!-- Feature 2 -->
-        <div class="shadow-gold/15 w-80 rounded-xl p-6 shadow-md">
-          <div class="mx-auto flex h-16 w-16 items-center justify-center">
-            <img
-              src="/dn-cargo/assets/greek-flag-D4TlgjY6.png"
-              alt="greek flag"
-              class="w-12"
-            />
-          </div>
-          <h3 class="text-darkgold mb-2 text-center text-xl font-semibold">
-            Transport to/from Greece
-          </h3>
-          <p class="text-platinum text-center text-sm">
-            We organize regular routes between Bulgaria and Greece — ideal for
-            business partnerships, commercial exchanges, and logistical needs.
-          </p>
-        </div>
+        <!-- Feature Cards -->
+        <div class="mt-20 flex flex-wrap justify-center gap-15">
+            <!-- Feature 1 -->
+            <div class="shadow-gold/15 w-80 rounded-xl p-6 shadow-md">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center">
+                    <img src="data:image/png;base64,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" alt="bulgarian flag" class="w-12" />
+                </div>
+                <h3 class="text-darkgold mb-2 text-center text-xl font-semibold">
+                    Internal Transport
+                </h3>
+                <p class="text-platinum text-center text-sm">
+                    We deliver to any point in Bulgaria — fast, efficiently, and safely.
+                </p>
+            </div>
 
-        <!-- Feature 3 -->
-        <div class="shadow-gold/15 w-80 rounded-xl p-6 shadow-md">
-          <div class="mx-auto flex h-16 w-16 items-center justify-center">
-            <img
-              src="/dn-cargo/assets/delivery-icon-Cn__Qp6D.png"
-              alt="delivery icon"
-              class="w-12"
-            />
-          </div>
-          <h3 class="text-darkgold mb-2 text-center text-xl font-semibold">
-            Tracking and Communication
-          </h3>
-          <p class="text-platinum text-center text-sm">
-            You'll always know where your cargo is — we ensure direct and timely
-            communication.
-          </p>
+            <!-- Feature 2 -->
+            <div class="shadow-gold/15 w-80 rounded-xl p-6 shadow-md">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center">
+                    <img src="/dn-cargo/assets/greek-flag-D4TlgjY6.png" alt="greek flag" class="w-12" />
+                </div>
+                <h3 class="text-darkgold mb-2 text-center text-xl font-semibold">
+                    Transport to/from Greece
+                </h3>
+                <p class="text-platinum text-center text-sm">
+                    We organize regular routes between Bulgaria and Greece — ideal for
+                    business partnerships, commercial exchanges, and logistical needs.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="shadow-gold/15 w-80 rounded-xl p-6 shadow-md">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center">
+                    <img src="/dn-cargo/assets/delivery-icon-Cn__Qp6D.png" alt="delivery icon" class="w-12" />
+                </div>
+                <h3 class="text-darkgold mb-2 text-center text-xl font-semibold">
+                    Tracking and Communication
+                </h3>
+                <p class="text-platinum text-center text-sm">
+                    You'll always know where your cargo is — we ensure direct and timely
+                    communication.
+                </p>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- About section -->
     <section id="about-section" class="w-full px-6 pt-22 lg:px-16 lg:pt-32">
-      <div
-        class="mx-auto flex max-w-7xl flex-col-reverse items-center gap-12 lg:flex-row"
-      >
-        <!-- Text Content -->
-        <div class="text-left lg:w-1/2">
-          <h2 class="text-3xl font-bold text-white sm:text-4xl">About Us</h2>
-          <p class="text-platinum mt-6 text-base leading-relaxed sm:text-lg">
-            DN Cargo is a dedicated logistics partner, delivering high-quality road transportation services across Bulgaria and Greece. We place a strong emphasis on reliability, professionalism, and an individual approach to each client’s logistics needs. Our operations are defined by precision and attention to detail, ensuring that every delivery is executed safely, efficiently, and within the agreed timeframe.
-          </p>
-          <p
-            class="text-platinum border-darkgold mt-10 border-l-4 bg-black/30 p-2 text-base leading-relaxed italic sm:text-sm"
-          >
-            We don't just deliver – we take care of your cargo as we would take
-            care of our own.
-          </p>
-          <a
-            href="#contact-section"
-            class="bg-gold hover:bg-darkgold mt-6 inline-block rounded-md px-5 py-3 font-semibold text-gray-900 transition"
-          >
-            Contact Us
-          </a>
+        <div class="mx-auto flex max-w-7xl flex-col-reverse items-center gap-12 lg:flex-row">
+            <!-- Text Content -->
+            <div class="text-left lg:w-1/2">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">About Us</h2>
+                <p class="text-platinum mt-6 text-base leading-relaxed sm:text-lg">
+                    DN Cargo is a dedicated logistics partner, delivering high-quality road transportation services
+                    across Bulgaria and Greece. We place a strong emphasis on reliability, professionalism, and an
+                    individual approach to each client’s logistics needs. Our operations are defined by precision and
+                    attention to detail, ensuring that every delivery is executed safely, efficiently, and within the
+                    agreed timeframe.
+                </p>
+                <p
+                    class="text-platinum border-darkgold mt-10 border-l-4 bg-black/30 p-2 text-base leading-relaxed italic sm:text-sm">
+                    We don't just deliver – we take care of your cargo as we would take
+                    care of our own.
+                </p>
+                <a href="#contact-section"
+                    class="bg-gold hover:bg-darkgold mt-6 inline-block rounded-md px-5 py-3 font-semibold text-gray-900 transition">
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Image / Illustration -->
+            <div class="flex justify-center items-center lg:w-1/2">
+                <img src="/dn-cargo/assets/information-14oZJVfN.png" alt="information icon" class="w-1/2 shadow-lg" />
+            </div>
         </div>
 
-        <!-- Image / Illustration -->
-        <div class="flex justify-center items-center lg:w-1/2">
-          <img
-            src="/dn-cargo/assets/information-14oZJVfN.png"
-            alt="information icon"
-            class="w-1/2 shadow-lg"
-          />
-        </div>
-      </div>
+        <!-- Why us -->
+        <div class="mx-auto mt-36 flex max-w-7xl flex-col items-center gap-12 lg:flex-row">
+            <!-- Image / Illustration -->
+            <div class="flex items-center justify-center lg:w-1/2">
+                <img src="/dn-cargo/assets/question-CSzAVy-O.jpg" alt="question icon" class="w-1/2 rounded-full shadow-lg" />
+            </div>
 
-      <!-- Why us -->
-      <div
-        class="mx-auto mt-36 flex max-w-7xl flex-col items-center gap-12 lg:flex-row"
-      >
-        <!-- Image / Illustration -->
-        <div class="flex items-center justify-center lg:w-1/2">
-          <img
-            src="/dn-cargo/assets/question-CSzAVy-O.jpg"
-            alt="question icon"
-            class="w-1/2 rounded-full shadow-lg"
-          />
-        </div>
+            <!-- Text Content -->
+            <div class="text-left lg:w-1/2">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">Why Us</h2>
 
-        <!-- Text Content -->
-        <div class="text-left lg:w-1/2">
-          <h2 class="text-3xl font-bold text-white sm:text-4xl">Why Us</h2>
-
-          <ul
-            class="mt-6 space-y-4 text-lg leading-relaxed text-white sm:text-lg"
-          >
-            <li class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-gold mt-1"></i>
-              <span>Reliability and punctuality in every delivery</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-gold mt-1"></i>
-              <span>Personalized service and flexibility</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-gold mt-1"></i>
-              <span>Competitive prices without compromising on quality</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-gold mt-1"></i>
-              <span>Loyal partnerships with Bulgarian and Greek companies</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-gold mt-1"></i>
-              <span
-                >Options for one-time or regular orders – tailored to your
-                business needs</span
-              >
-            </li>
-          </ul>
+                <ul class="mt-6 space-y-4 text-lg leading-relaxed text-white sm:text-lg">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-gold mt-1"></i>
+                        <span>Reliability and punctuality in every delivery</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-gold mt-1"></i>
+                        <span>Personalized service and flexibility</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-gold mt-1"></i>
+                        <span>Competitive prices without compromising on quality</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-gold mt-1"></i>
+                        <span>Loyal partnerships with Bulgarian and Greek companies</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-gold mt-1"></i>
+                        <span>Options for one-time or regular orders – tailored to your
+                            business needs</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact section -->
     <section id="contact-section" class="isolate px-6 py-22 sm:py-32 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold text-white sm:text-4xl">
-            Contact Us
-        </h2>
-        <p class="text-platinum mt-4 text-md/6">
-            Please fill out the form below and provide the following details so we can offer you the best transport solution.
-        </p>
-      </div>
+        <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold text-white sm:text-4xl">
+                Contact Us
+            </h2>
+            <p class="text-platinum mt-4 text-md/6">
+                Please fill out the form below and provide the following details so we can offer you the best transport
+                solution.
+            </p>
+        </div>
 
-      <form action="#" id="form" class="mx-auto mt-16 max-w-xl sm:mt-20">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
-            <label
-              for="first-name"
-              class="block text-sm/6 font-semibold text-white"
-              >First name</label
-            >
-            <div class="mt-2.5">
-              <input
-                id="first-name"
-                type="text"
-                name="first-name"
-                autocomplete="given-name"
-                required
-                class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2"
-              />
-            </div>
-          </div>
-          <div>
-            <label
-              for="last-name"
-              class="block text-sm/6 font-semibold text-white"
-              >Last name</label
-            >
-            <div class="mt-2.5">
-              <input
-                id="last-name"
-                type="text"
-                name="last-name"
-                autocomplete="family-name"
-                required
-                class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2"
-              />
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label
-              for="company"
-              class="block text-sm/6 font-semibold text-white"
-              >Company</label
-            >
-            <div class="mt-2.5">
-              <input
-                id="company"
-                type="text"
-                name="company"
-                autocomplete="organization"
-                class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2"
-              />
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="email" class="block text-sm/6 font-semibold text-white"
-              >Email</label
-            >
-            <div class="mt-2.5">
-              <input
-                id="email"
-                type="email"
-                name="email"
-                autocomplete="email"
-                required
-                class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2"
-              />
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label
-              for="phone-number"
-              class="block text-sm/6 font-semibold text-white"
-              >Phone number</label
-            >
-            <div class="mt-2.5">
-              <div
-                class="has-[input:focus-within]:outline-darkgold flex rounded-md bg-white outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2"
-              >
-                <input
-                  id="phone-number"
-                  type="text"
-                  name="phone-number"
-                  placeholder="  +359 123 456 789"
-                  required
-                  class="block min-w-0 grow py-2 px-3.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label
-              for="message"
-              class="block text-sm/6 font-semibold text-white"
-              >Message</label
-            >
-            <div class="mt-2.5">
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-                class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2"
-              ></textarea>
-            </div>
-          </div>
-          <!-- <div class="flex gap-x-4 sm:col-span-2">
+        <form action="#" id="form" class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <div>
+                    <label for="first-name" class="block text-sm/6 font-semibold text-white">First name</label>
+                    <div class="mt-2.5">
+                        <input id="first-name" type="text" name="first-name" autocomplete="given-name" required
+                            class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2" />
+                    </div>
+                </div>
+                <div>
+                    <label for="last-name" class="block text-sm/6 font-semibold text-white">Last name</label>
+                    <div class="mt-2.5">
+                        <input id="last-name" type="text" name="last-name" autocomplete="family-name" required
+                            class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2" />
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="company" class="block text-sm/6 font-semibold text-white">Company</label>
+                    <div class="mt-2.5">
+                        <input id="company" type="text" name="company" autocomplete="organization"
+                            class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2" />
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="email" class="block text-sm/6 font-semibold text-white">Email</label>
+                    <div class="mt-2.5">
+                        <input id="email" type="email" name="email" autocomplete="email" required
+                            class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2" />
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="phone-number" class="block text-sm/6 font-semibold text-white">Phone number</label>
+                    <div class="mt-2.5">
+                        <div
+                            class="has-[input:focus-within]:outline-darkgold flex rounded-md bg-white outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2">
+                            <input id="phone-number" type="text" name="phone-number" required
+                                class="block min-w-0 grow py-2 px-3.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block text-sm/6 font-semibold text-white">Message</label>
+                    <div class="mt-2.5">
+                        <textarea id="message" name="message" rows="4" required
+                            class="focus:outline-darkgold block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2"></textarea>
+                    </div>
+                </div>
+                <!-- <div class="flex gap-x-4 sm:col-span-2">
             <div class="flex h-6 items-center">
               <div
                 class="group outline-darkgold has-checked:bg-darkgold relative inline-flex w-8 shrink-0 rounded-full bg-gray-200 p-px inset-ring inset-ring-gray-900/5 outline-offset-2 transition-colors duration-200 ease-in-out has-focus-visible:outline-2"
@@ -478,66 +332,65 @@
               >.
             </label>
           </div> -->
-        </div>
-        <div class="mt-10">
-          <button
-            type="submit"
-            class="bg-gold hover:bg-darkgold focus-visible:outline-darkgold block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer"
-          >
-            Let's talk
-          </button>
-        </div>
-      </form>
+            </div>
+            <div class="mt-10">
+                <button type="submit"
+                    class="bg-gold hover:bg-darkgold focus-visible:outline-darkgold block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer">
+                    Let's talk
+                </button>
+            </div>
+        </form>
 
-      <!-- Info Cards -->
-      <div class="mt-25 flex flex-wrap justify-center gap-15">
-        <!-- Phone Number -->
-        <div class="shadow-gold/15 w-70 rounded-xl p-6 shadow-md">
-          <div class="mx-auto flex h-16 w-16 items-center justify-center">
-            <i class="fa-solid fa-phone-volume text-darkgold text-4xl animate-pulse"></i>
-          </div>
-          <h3 class="text-md text-darkgold mb-2 text-center font-semibold">
-            Call us
-          </h3>
-          <p class="text-platinum text-lg text-center">+359 111 11 11 11</p>
-        </div>
+        <!-- Info Cards -->
+        <div class="mt-25 flex flex-wrap justify-center gap-15">
+            <!-- Phone Number -->
+            <div class="shadow-gold/15 w-70 rounded-xl p-6 shadow-md">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center">
+                    <i class="fa-solid fa-phone-volume text-darkgold text-4xl animate-pulse"></i>
+                </div>
+                <h3 class="text-md text-darkgold mb-2 text-center font-semibold">
+                    Call us
+                </h3>
+                <p class="text-platinum text-lg text-center">+359 89 541 4778</p>
+            </div>
 
-        <!-- Email -->
-        <div class="shadow-gold/15 w-70 rounded-xl p-6 shadow-md">
-          <div class="mx-auto flex h-16 w-16 items-center justify-center">
-            <i class="fa-solid fa-envelope text-darkgold text-4xl animate-pulse"></i>
-          </div>
-          <h3 class="text-md text-darkgold mb-2 text-center font-semibold">
-            Write us
-          </h3>
-          <p class="text-platinum text-lg text-center">dncargo@gmail.com</p>
-        </div>
+            <!-- Email -->
+            <div class="shadow-gold/15 w-70 rounded-xl p-6 shadow-md">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center">
+                    <i class="fa-solid fa-envelope text-darkgold text-4xl animate-pulse"></i>
+                </div>
+                <h3 class="text-md text-darkgold mb-2 text-center font-semibold">
+                    Write us
+                </h3>
+                <p class="text-platinum text-lg text-center">dncargo@gmail.com</p>
+            </div>
 
-        <!-- Working Hours -->
-        <div class="shadow-gold/15 w-70 rounded-xl p-6 shadow-md">
-          <div class="mx-auto flex h-16 w-16 items-center justify-center">
-            <i class="fa-regular fa-clock text-darkgold text-4xl animate-pulse"></i>
-          </div>
-          <h3 class="text-md text-darkgold mb-2 text-center font-semibold">
-            Working hours
-          </h3>
-          <p class="text-platinum text-lg text-center">
-            Mon - Fr 09:00 - 17:30
-          </p>
+            <!-- Working Hours -->
+            <div class="shadow-gold/15 w-70 rounded-xl p-6 shadow-md">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center">
+                    <i class="fa-regular fa-clock text-darkgold text-4xl animate-pulse"></i>
+                </div>
+                <h3 class="text-md text-darkgold mb-2 text-center font-semibold">
+                    Working hours
+                </h3>
+                <p class="text-platinum text-lg text-center">
+                    Mon - Fr 09:00 - 17:30
+                </p>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-platinum w-full bg-black/60 px-6 py-10">
-      <div class="mx-auto max-w-7xl text-center">
-        <!-- Copyright -->
-        <p class="text-sm text-gray-500">
-          &copy; 2025 DN Cargo. All rights reserved.
-        </p>
-      </div>
+        <div class="mx-auto max-w-7xl text-center">
+            <!-- Copyright -->
+            <p class="text-sm text-gray-500">
+                &copy; 2025 DN Cargo. All rights reserved.
+            </p>
+        </div>
     </footer>
 
     <script src="/src/main.js"></script>
-  </body>
+</body>
+
 </html>
